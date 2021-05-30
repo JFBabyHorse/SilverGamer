@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>F:\SilverEngine\SilverGamer\SilverGamer\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>F:\SilverEngine\SilverGamer\SilverGamer\dll;F:\SilverEngine\SilverGamer\SilverGamer\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -78,11 +78,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\SilverEngine\SilverGamer\Editor\imgui_lib;F:\SilverEngine\SilverGamer\Editor\backend;F:\SilverEngine\SilverGamer\Editor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\SilverEngine\SilverGamer\SGSystemLib;F:\SilverEngine\SilverGamer\Editor\imgui_lib;F:\SilverEngine\SilverGamer\Editor\backend;F:\SilverEngine\SilverGamer\Editor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>Editor.lib;d3dcompiler.lib;d3d11.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SGSystemLib.lib;Editor.lib;d3dcompiler.lib;d3d11.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\SilverEngine\SilverGamer\SilverGamer\dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
