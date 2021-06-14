@@ -19,9 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MacroLib.h" />
+    <ClInclude Include="MemoryManager.h" />
+    <ClInclude Include="SGSingleton.h" />
     <ClInclude Include="SGSystem.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="SGSystem.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
